@@ -1,0 +1,18 @@
+// ----------ШРИФТ------
+@mixin font($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+  }
+// ------Бордери для кнопок--------
+  @mixin border( $b, $br){
+    border: $b;
+    border-radius: $br;
+  }
+// ------Анімація при переході чи навадені-------
+  @mixin transition($td,$ttf ){
+    transition-duration: $td;
+    transition-timing-function: $ttf;
+
+  }

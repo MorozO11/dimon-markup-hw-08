@@ -1,0 +1,54 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    color: var(--primary-text-color);
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+
+}
+
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+  
+
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
