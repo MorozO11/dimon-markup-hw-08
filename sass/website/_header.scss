@@ -1,12 +1,13 @@
 // -------Головний блок хедера------------------------------------------------------
 .header {
+  position: relative;
     width: 100%;
     border-bottom: 1px solid var(--border-backgraund-color);
     background: #fff;
     &__container {
       display: flex;
       align-items: center;
-      min-width: 80px;
+      
     }
     &__logo {
       @include font(700,24px,normal,0.78px);
@@ -89,6 +90,15 @@
       margin-right: 10px;
     }
   }
+// ------------Мобілка---------
+.page-header{
+  display: none;
+
+  &.is-open{
+    display: block;
+  }
+}
+
 
 
 
