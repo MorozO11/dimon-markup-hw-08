@@ -50,7 +50,7 @@ p {
 }
 
 .container {
-  max-width: 450px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -170,13 +170,15 @@ a {
 }
 
 .menu-burger {
-  position: absolute;
-  top: 10px;
-  right: 15px;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 769px) {
+  .menu-burger {
+    display: none;
+  }
 }
 
 .menu-burger .icon-close {
@@ -640,18 +642,32 @@ a {
 }
 
 .header {
-  position: relative;
   width: 100%;
   border-bottom: 1px solid var(--border-backgraund-color);
   background: #fff;
 }
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .header__logo {
   font-weight: 700;
@@ -660,7 +676,11 @@ a {
   letter-spacing: 0.78px;
   font-family: Raleway;
   color: var(--primary-text-color);
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
 }
 .header__logo span {
   color: var(--link-text-color);
@@ -677,7 +697,19 @@ a {
      -moz-column-gap: 50px;
           column-gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 96px;
+  }
+}
 .nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--primary-text-color);
@@ -689,6 +721,14 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 768px) {
+  .nav__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--link-text-color);
@@ -707,11 +747,6 @@ a {
   bottom: -1px;
   border-radius: 2px;
 }
-.nav__iteam {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .contacts-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,16 +755,24 @@ a {
      -moz-column-gap: 50px;
           column-gap: 50px;
 }
+@media screen and (max-width: 768px) {
+  .contacts-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contacts-header__link {
   color: var(--item-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.28px;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -741,6 +784,14 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--item-text-color);
 }
+@media screen and (max-width: 768px) {
+  .contacts-header__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contacts-header__link:hover, .contacts-header__link:focus {
   color: var(--link-text-color);
   fill: var(--link-text-color);
@@ -750,10 +801,27 @@ a {
 }
 
 .page-header {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
 }
 .page-header.is-open {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .page-header {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .hero {
