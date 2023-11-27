@@ -68,30 +68,6 @@
        /* transition: all .2s linear; */
    }
 }
-// ---------БУРГЕР МЕНЮ-------------
 
-.menu-burger{
-   margin: 0;
-   padding: 0;
-   border: none;
-   background-color: transparent;
-   
-   @media screen and (min-width:769px) {
-      display: none;
-
-   }
-}
-
-.menu-burger .icon-close{
-   display: none;
-}
-
-.menu-burger.is-open .icon-close{
-   display: block;
-}
-
-.menu-burger.is-open .icon-menu{
-   display: none;
-}
 
 
