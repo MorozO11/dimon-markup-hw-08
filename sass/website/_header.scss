@@ -31,6 +31,8 @@
     font-family: Raleway;
     color: var(--primary-text-color);
 
+ 
+
     @media screen and (min-width:768px) {
       margin-right: 88px;
 
@@ -178,7 +180,7 @@
 
 // ------------Мобілка---------
 .page-header {
-
+padding-left: 40px;
 
   &.is-open {
     display: block;

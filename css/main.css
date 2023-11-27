@@ -50,7 +50,12 @@ p {
 }
 
 .container {
+  min-width: 320px;
   max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -841,6 +846,9 @@ a {
 .contacts-header__link:hover, .contacts-header__link:focus {
   color: var(--link-text-color);
   fill: var(--link-text-color);
+}
+.page-header {
+  padding-left: 40px;
 }
 .page-header.is-open {
   display: block;
