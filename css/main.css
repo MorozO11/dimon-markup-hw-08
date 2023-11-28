@@ -50,7 +50,7 @@ p {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -665,11 +665,21 @@ a {
     display: none;
   }
 }
-.header__contacts {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 768px) {
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .nav__list {
@@ -780,18 +790,18 @@ a {
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:hover {
+  fill: var(--button-hover-color);
 }
 
 .menu-container {
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: white;
   z-index: 50;
   -webkit-transform: translateX(100%);
@@ -810,7 +820,7 @@ a {
 .menu-container .menu-toggle {
   position: absolute;
   top: 0px;
-  right: 30px;
+  right: 15px;
   color: #fff;
 }
 
@@ -818,6 +828,62 @@ a {
   #mobile-menu {
     display: none;
   }
+}
+
+.burger__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  font-size: 40px;
+  padding-bottom: 300px;
+}
+.burger__nav-link {
+  color: var(--primary-text-color);
+}
+.burger__nav-link:hover {
+  color: var(--link-text-color);
+}
+
+.burger__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding-bottom: 64px;
+}
+.burger__contacts-link {
+  font-size: 24px;
+  color: var(--label--text-color);
+}
+.burger__contacts-link:hover {
+  font-size: 34px;
+  color: var(--link-text-color);
+}
+
+.burger__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+}
+.burger__social-link {
+  color: var(--link-text-color);
+}
+
+.line {
+  color: rgba(33, 33, 33, 0.2);
 }
 
 .hero {

@@ -21,6 +21,7 @@
 
   &__menu {
     display: flex;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -29,13 +30,23 @@
   &__nav {}
 
   &__contacts {
-    flex-direction: column;
+
+
+    @media (min-width:768px) {
+      flex-direction: column;
+
+    }
+
+    @media (min-width:1200px) {
+      flex-direction: row;
+    }
+
   }
 }
 
 // ---------Навігація----------------------------------------------
 .nav {
- 
+
 
   &__list {
     display: flex;
@@ -85,9 +96,10 @@
   display: flex;
   column-gap: 30px;
   row-gap: 10px;
-  @media(max-width:768px)  {
-    display: none; 
-    
+
+  @media(max-width:768px) {
+    display: none;
+
   }
 
   &__link {
@@ -95,7 +107,7 @@
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none;
-    
+
     display: flex;
     align-items: center;
     transition-property: color, fill;
@@ -136,21 +148,21 @@
 }
 
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:hover {
+  fill: var(--button-hover-color);
 }
 
 .menu-container {
+  overflow: auto;
   position: fixed;
+  
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: white;
   z-index: 50;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -162,14 +174,66 @@
 .menu-container .menu-toggle {
   position: absolute;
   top: 0px;
-  right: 30px;
+  right: 15px;
   color: #fff;
 }
 
 #mobile-menu {
-@media(min-width:768px)  {
-  display: none; 
-  
-}
+  @media(min-width:768px) {
+    display: none;
+
+  }
 }
 
+
+
+.burger__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 40px;
+  padding-bottom: 300px;
+
+  &-link {
+    color: var(--primary-text-color);
+    &:hover {
+      color: var(--link-text-color);
+    }
+  }
+}
+
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 64px;
+
+
+  &-link {
+    font-size: 24px;
+    color: var(--label--text-color);
+
+    &:hover {
+      font-size: 34px;
+      color: var(--link-text-color);
+    }
+  }
+}
+
+.burger__social {
+  display: flex;
+  justify-content:space-between;
+  
+  font-weight: 500;
+
+  &-link{
+    color: var(--link-text-color);
+  }
+
+}
+
+.line {
+ 
+  color: rgba(33, 33, 33, 0.20);
+
+}
