@@ -888,10 +888,10 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: 500;
-  font-size: 16px;
-  -webkit-column-gap: 7px;
-     -moz-column-gap: 7px;
-          column-gap: 7px;
+  font-size: 15px;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
   row-gap: 5px;
 }
 .burger__social-link {
