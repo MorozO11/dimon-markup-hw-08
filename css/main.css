@@ -807,7 +807,7 @@ a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding: 40px;
   background-color: white;
   z-index: 50;
@@ -870,7 +870,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  padding-bottom: 64px;
+}
+.burger__contacts :last-child {
+  margin-bottom: 64px;
 }
 .burger__contacts-link {
   font-size: 24px;
