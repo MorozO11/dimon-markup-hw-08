@@ -153,7 +153,7 @@
 }
 
 .menu-container {
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -231,7 +231,7 @@
   display: flex;
   flex-wrap: wrap;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   column-gap: 10px;
   row-gap: 5px;
 
