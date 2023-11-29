@@ -155,7 +155,8 @@
 .menu-container {
   overflow: auto;
   position: fixed;
-  
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
@@ -192,10 +193,15 @@
   flex-direction: column;
   gap: 30px;
   font-size: 40px;
-  padding-bottom: 300px;
+  flex: 1 1 auto;
+
+  &-iteam {
+    margin-bottom: 30px;
+  }
 
   &-link {
     color: var(--primary-text-color);
+
     &:hover {
       color: var(--link-text-color);
     }
@@ -213,27 +219,33 @@
     font-size: 24px;
     color: var(--label--text-color);
 
-    &:hover {
+    &--big {
       font-size: 34px;
       color: var(--link-text-color);
+
     }
   }
 }
 
 .burger__social {
   display: flex;
-  justify-content:space-between;
-  
+  flex-wrap: wrap;
   font-weight: 500;
 
-  &-link{
+  &-link {
     color: var(--link-text-color);
+    &:hover {
+      text-decoration: underline;
+    }
+  
   }
 
 }
 
 .line {
- 
+  margin-left: 10px;
+  margin-right: 10px;
   color: rgba(33, 33, 33, 0.20);
+
 
 }
