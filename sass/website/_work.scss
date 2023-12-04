@@ -13,13 +13,21 @@
   // -----------ПРИКЛАДИ РОБІТ-------
   .list-work {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    justify-content: space-between;
     text-align: center;
     padding-top: 50px;
     position: relative;
+    
+    @media (min-width:768px) {
+      flex-wrap: nowrap;
+    }
+
     &__iteam {
       position: relative;
+   
     }
     &__title {
       color: #fff;

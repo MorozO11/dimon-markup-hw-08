@@ -1,39 +1,58 @@
 // -----------БЛОК ПЕРЕВАГ---------
 .features {
-    padding-bottom: 0px;
-    &__container {
-    }
-    &__list {
-    }
-  }
-  
-  .list-features {
+  padding-bottom: 0px;
+
+  &__container {}
+
+  &__list {}
+}
+
+.list-features {
+  @media (min-width:768px) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
-    &__box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 270px;
-      height: 120px;
-      margin-bottom: 30px;
-      border-radius: 4px;
-      background: #f5f4fa;
-    }
-  
-    &__title {
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.42px;
-      margin-bottom: 10px;
-    }
-  
-    &__text {
-      color: var(--item-text-color);
-      line-height: 171.429%;
-      /* 24px */
-      letter-spacing: 0.42px;
-    }
+   
+
+
   }
-  
+
+  &__item {
+    width: 100%;
+    @media (min-width:768px) {
+      max-width: 354px;
+    }
+
+    @media (min-width:1200px) {
+      max-width: 270px;
+    }
+
+  }
+
+  &__box {
+    
+    padding: 25px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f5f4fa;
+
+
+
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--item-text-color);
+    line-height: 171.429%;
+    /* 24px */
+    letter-spacing: 0.42px;
+  }
+}
