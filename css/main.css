@@ -1092,7 +1092,7 @@ a {
         flex-wrap: nowrap;
   }
 }
-.list-work__iteam {
+.list-work__item {
   position: relative;
 }
 .list-work__title {
@@ -1101,6 +1101,7 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   position: absolute;
+  font-weight: 700;
   bottom: 0;
   width: 100%;
   padding-bottom: 27px;
