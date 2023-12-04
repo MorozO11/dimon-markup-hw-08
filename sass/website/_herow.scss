@@ -1,24 +1,45 @@
 // ------------БЛОК ГЕРОЙ--------
 .hero {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/img/Hero\ img\ 468.jpg) no-repeat;
-    background-size: cover;
+    url(/img/Hero-img-468.jpg) no-repeat;
+  background-size: cover;
 
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/img/Hero-img-468-2x.jpg) no-repeat;
+    background-size: cover;
+  }
 
 
   @media (min-width:768px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/Hero\ img\ 768.jpg) no-repeat;
+      url(/img/Hero-img-768.jpg) no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/img/Hero-img-768-2x.jpg) no-repeat;
       background-size: cover;
+    }
 
   }
 
   @media (min-width:1200px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/Hero\ img\ 1200.jpg) no-repeat;
+      url(/img/Hero-img-1200.jpg) no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/img/Hero-img-1200-2x.jpg) no-repeat;
       background-size: cover;
-
-
+    }
 
   }
 
@@ -36,9 +57,6 @@
       padding-top: 200px;
       padding-bottom: 200px;
       align-items: center;
-
-
-
     }
   }
 
@@ -51,13 +69,10 @@
     margin-top: 0;
     margin-bottom: 0;
     max-width: 360px;
+
     @media (min-width:1200px) {
       max-width: 700px;
       @include font(900, 44px, 136.364%, 2.64px);
-
-
-
-      
     }
 
   }
