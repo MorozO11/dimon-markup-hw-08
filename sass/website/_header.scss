@@ -170,6 +170,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  
 }
 
 .menu-container .menu-toggle {
@@ -182,6 +183,7 @@
 #mobile-menu {
   @media(min-width:768px) {
     display: none;
+    
 
   }
 }

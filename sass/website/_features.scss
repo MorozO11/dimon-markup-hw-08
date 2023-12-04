@@ -8,10 +8,14 @@
 }
 
 .list-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   @media (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: row;
+    
    
 
 
