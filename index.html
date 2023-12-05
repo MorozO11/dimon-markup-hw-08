@@ -60,7 +60,7 @@
             <use href="./img/icons/close_40px.svg#close_40px"></use>
           </svg>
         </button>
- 
+
         <ul class="burger__nav">
           <li class="burge__nav-iteam">
             <a class="burger__nav-link" href="">Студія</a>
@@ -72,7 +72,7 @@
             <a class="burger__nav-link" href="">Контакти</a>
           </li>
         </ul>
-  
+
         <ul class="burger__contacts" not-last-chil>
           <li class="burger__contacts-iteam">
             <a class="burger__contacts-link--big" href="tel:+380961111111" target="_blank">
@@ -88,32 +88,36 @@
         <ul class="burger__social">
           <li class="burger__social-iteam">
             <a class="burger__social-link" href="">Instagram
-          </a> </li>
+            </a>
+          </li>
           <span class="line">|</span>
-          
+
           <li class="burger__social-iteam">
-            <a class="burger__social-link" href="">Twitter 
-            </a></li>
-            <span class="line">|</span>
-            
+            <a class="burger__social-link" href="">Twitter
+            </a>
+          </li>
+          <span class="line">|</span>
+
           <li class="burger__social-iteam">
-            <a class="burger__social-link" href="">Facebook 
-            </a></li>
-            <span class="line">|</span>
-            
+            <a class="burger__social-link" href="">Facebook
+            </a>
+          </li>
+          <span class="line">|</span>
+
           <li class="burger__social-iteam">
             <a class="burger__social-link" href="">LinkedIn
-            </a></li>
+            </a>
+          </li>
         </ul>
-  
-  
-  
+
+
+
       </div>
     </div>
 
-   
+
   </header>
-   <main>
+  <main>
     <section class="hero">
       <div class="container hero__container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -176,31 +180,91 @@
         </ul>
       </div>
     </section>
-     <section class="section work">
+    <section class="section work">
       <div class="container work__container">
         <h2 class="work__title">Чим ми займаємося</h2>
         <ul class="work__list list-work">
           <li>
             <div class="list-work__item">
-              <img src="./img/Work-img1.jpg"
-              srcset="./img/Work-img1.jpg 1x, 
+              <picture>
+                <source
+                srcset="
+              ./img/Work-img1.jpg  1x, 
               ./img/Work-img1-2x.jpg 2x"
-              alt="планщет з телефоном"  />
+              media="(min-width: 1200px)" 
+                >
+
+                <source
+                srcset="
+              ./img/Work-img1.jpg  1x, 
+              ./img/Work-img1-2x.jpg 2x"
+              media="(min-width: 768px)" 
+                >
+
+                <source
+                srcset="
+              ./img/Work-img1.jpg  1x, 
+              ./img/Work-img1-2x.jpg 2x"
+              media="(min-width: 320px)" 
+                >
+              </picture>
+              <img 
+              src="./img/Work-img1.jpg" alt="планщет з телефоном" />
               <p class="list-work__title">ДЕСКТОПНІ ДОДАТКИ</p>
             </div>
           </li>
           <li class="list-work__item">
-            <img src="./img/Work-img2.jpg"
-            srcset="./img/Work-img2.jpg 1x, 
+            <picture>
+              <source
+              srcset="
+            ./img/Work-img2.jpg  1x, 
             ./img/Work-img2-2x.jpg 2x"
-            alt="телефон"  />
+            media="(min-width: 1200px)" 
+              >
+
+              <source
+              srcset="
+            ./img/Work-img2.jpg  1x, 
+            ./img/Work-img2-2x.jpg 2x"
+            media="(min-width: 768px)" 
+              >
+
+              <source
+              srcset="
+            ./img/Work-img2.jpg  1x, 
+            ./img/Work-img2-2x.jpg 2x"
+            media="(min-width: 320px)" 
+              >
+            </picture>
+            <img 
+             src="./img/Work-img2.jpg" alt="телефон" />
             <h2 class="list-work__title">МОБІЛЬНІ ДОДАТКИ</h2>
           </li>
           <li class="list-work__item">
-            <img src="./img/Work-img3.jpg" 
-            srcset="./img/Work-img3.jpg 1x, 
+            <picture>
+              <source
+              srcset="
+            ./img/Work-img3.jpg  1x, 
             ./img/Work-img3-2x.jpg 2x"
-            alt="планшет"  />
+            media="(min-width: 1200px)" 
+              >
+
+              <source
+              srcset="
+            ./img/Work-img3.jpg  1x, 
+            ./img/Work-img3-2x.jpg 2x"
+            media="(min-width: 768px)" 
+              >
+
+              <source
+              srcset="
+            ./img/Work-img3.jpg  1x, 
+            ./img/Work-img3-2x.jpg 2x"
+            media="(min-width: 320px)" 
+              >
+            </picture>
+            <img
+             src="./img/Work-img3.jpg" alt="планшет" />
             <h2 class="list-work__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h2>
           </li>
         </ul>
@@ -478,71 +542,72 @@
     </div>
   </footer> -->
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-close__btn" data-modal-close>
-        <svg width="18px" height="18px">
-          <use href="./img/icons/modal-close.svg#icon-Vector"></use>
-        </svg>
-      </button>
-      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-      <form class="form__modal">
-        <div class="form">
-          <label class="form__label" for="name">І'мя</label>
-          <div class="form__input-wrap">
-            <input type="text" name="name" id="name" class="form__input" required />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./img/icons/symbol-defs-modal.svg#icon-person-black"></use>
-            </svg>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close__btn" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./img/icons/modal-close.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="form__modal">
+          <div class="form">
+            <label class="form__label" for="name">І'мя</label>
+            <div class="form__input-wrap">
+              <input type="text" name="name" id="name" class="form__input" required />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="./img/icons/symbol-defs-modal.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="form">
-          <label class="form__label" for="tel">Телефон</label>
-          <div class="form__input-wrap">
-            <input type="tel" name="tel" id="tel" class="form__input" required />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./img/icons/symbol-defs-modal.svg#icon-phone-black"></use>
-            </svg>
+          <div class="form">
+            <label class="form__label" for="tel">Телефон</label>
+            <div class="form__input-wrap">
+              <input type="tel" name="tel" id="tel" class="form__input" required />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="./img/icons/symbol-defs-modal.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="form">
-          <label class="form__label" for="mail">Пошта</label>
-          <div class="form__input-wrap">
-            <input type="email" name="mail" id="mail" class="form__input" required />
-            <svg class="form__icon" width="18px" height="18px">
-              <use href="./img/icons/symbol-defs-modal.svg#icon-email-black"></use>
-            </svg>
+          <div class="form">
+            <label class="form__label" for="mail">Пошта</label>
+            <div class="form__input-wrap">
+              <input type="email" name="mail" id="mail" class="form__input" required />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="./img/icons/symbol-defs-modal.svg#icon-email-black"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="form">
-          <label class="form__label" for="comemnt">Коментар</label>
-          <textarea class="form__textarea" name="comemnt" id="comemnt" rows="10" placeholder="Введіть текст"></textarea>
-        </div>
+          <div class="form">
+            <label class="form__label" for="comemnt">Коментар</label>
+            <textarea class="form__textarea" name="comemnt" id="comemnt" rows="10"
+              placeholder="Введіть текст"></textarea>
+          </div>
 
-        <div class="form-checkbox">
-          <label class="form-checkbox__label" for="policy">
-            <input class="form-checkbox__input" type="checkbox" name="policy" id="policy" required />
-            <span class="form-checkbox__check"></span>Погоджуюся з розсилкою
-            та приймаю
-            <a href="#" class="form-checkbox__policy" target="_blank">Умови договору</a></label>
-        </div>
+          <div class="form-checkbox">
+            <label class="form-checkbox__label" for="policy">
+              <input class="form-checkbox__input" type="checkbox" name="policy" id="policy" required />
+              <span class="form-checkbox__check"></span>Погоджуюся з розсилкою
+              та приймаю
+              <a href="#" class="form-checkbox__policy" target="_blank">Умови договору</a></label>
+          </div>
 
-        <div class="form__button">
-          <button class="button modal__button" type="submit">
-            Відправити
-          </button>
-        </div>
-      </form>
+          <div class="form__button">
+            <button class="button modal__button" type="submit">
+              Відправити
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
 
 
 
-  <script src="./js/burger-menu.js"></script>
-  <script src="./js/modal.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
