@@ -186,39 +186,45 @@
         <ul class="work__list list-work">
           <li>
             <div class="list-work__item">
-              <img 
-              srcset="
+              <img srcset="
               ./img/Work-img1.jpg  1x, 
-              ./img/Work-img1-2x.jpg 2x" 
-              src="./img/Work-img1.jpg" alt="планщет з телефоном" />
+              ./img/Work-img1-2x.jpg 2x" src="./img/Work-img1.jpg" alt="планщет з телефоном" />
               <p class="list-work__title">ДЕСКТОПНІ ДОДАТКИ</p>
             </div>
           </li>
           <li class="list-work__item">
-            <img 
-            srcset="
+            <img srcset="
             ./img/Work-img2.jpg  1x, 
-            ./img/Work-img2-2x.jpg 2x"
-             src="./img/Work-img2.jpg" alt="телефон" />
+            ./img/Work-img2-2x.jpg 2x" src="./img/Work-img2.jpg" alt="телефон" />
             <h2 class="list-work__title">МОБІЛЬНІ ДОДАТКИ</h2>
           </li>
           <li class="list-work__item">
-            <img
-             srcset="
+            <img srcset="
              ./img/Work-img3.jpg  1x, 
-            ./img/Work-img3-2x.jpg 2x"
-             src="./img/Work-img3.jpg" alt="планшет" />
+            ./img/Work-img3-2x.jpg 2x" src="./img/Work-img3.jpg" alt="планшет" />
             <h2 class="list-work__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h2>
           </li>
         </ul>
       </div>
     </section>
-    <!--<section class="section team">
+    <section class="section team">
       <div class="container team__container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list-team">
           <li class="list-team__card">
-            <img src="./img/img1.jpg" alt="чоловік" />
+            <picture>
+              <source srcset="
+              ./img/imgteam-desc-1-1x.jpg 1x,
+              ./img/imgteam-desc-1-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="
+              ./img/imgteam-tab-1-1x.jpg 1x,
+              ./img/imgteam-tab-1-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="
+              ./img/imgteam-mob-1-1x.jpg 1x,
+              ./img/imgteam-mob-1-2x.jpg 2x" media="(min-width:320px)">
+              <img src="./img/imgteam-mob-1-1x.jpg" alt="чоловік" />
+            </picture>
+
             <h3 class="list-team__name">Ігор Дем'яненко</h3>
             <p class="list-team__specialty">Product Designer</p>
             <div class="team__social social">
@@ -255,7 +261,19 @@
             </div>
           </li>
           <li class="list-team__card">
-            <img src="./img/img2.jpg" alt="жінка" />
+            <picture>
+              <source srcset="
+              ./img/imgteam-desc-2-1x.jpg 1x,
+              ./img/imgteam-desc-2-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="
+              ./img/imgteam-tab-2-1x.jpg 1x,
+              ./img/imgteam-tab-2-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="
+              ./img/imgteam-mob-2-1x.jpg 1x,
+              ./img/imgteam-mob-2-2x.jpg 2x" media="(min-width:320px)">
+              <img src="./img/imgteam-mob-2-1x.jpg" alt="жінка" />
+            </picture>
+
             <h3 class="list-team__name">Ольга Рєпіна</h3>
             <p class="list-team__specialty">Frontend Developer</p>
             <div class="team__social social">
@@ -292,7 +310,20 @@
             </div>
           </li>
           <li class="list-team__card">
-            <img src="./img/img3.jpg" alt="чоловік" />
+            <picture>
+              <source srcset="
+              ./img/imgteam-desc-3-1x.jpg 1x,
+              ./img/imgteam-desc-3-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="
+              ./img/imgteam-tab-3-1x.jpg 1x,
+              ./img/imgteam-tab-3-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="
+              ./img/imgteam-mob-3-1x.jpg 1x,
+              ./img/imgteam-mob-3-2x.jpg 2x" media="(min-width:320px)">
+              <img src="./img/imgteam-mob-3-1x.jpg" alt="чоловік" />
+            </picture>
+            </picture>
+
             <h3 class="list-team__name">Микола Тарасов</h3>
             <p class="list-team__specialty">Marketing</p>
             <div class="team__social social">
@@ -329,7 +360,19 @@
             </div>
           </li>
           <li class="list-team__card">
-            <img src="./img/img4.jpg" alt="чоловік" />
+            <picture>
+              <source srcset="
+              ./img/imgteam-desc-4-1x.jpg 1x,
+              ./img/imgteam-desc-4-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="
+              ./img/imgteam-tab-4-1x.jpg 1x,
+              ./img/imgteam-tab-4-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="
+              ./img/imgteam-mob-4-1x.jpg 1x,
+              ./img/imgteam-mob-4-2x.jpg 2x" media="(min-width:320px)">
+              <img src="./img/imgteam-mob-4-1x.jpg" alt="чоловік" />
+            </picture>
+
             <h3 class="list-team__name">Михайло Єрмаков</h3>
             <p class="list-team__specialty">UI Designer</p>
             <div class="team__social social">
@@ -368,7 +411,7 @@
         </ul>
       </div>
     </section>
-    <section class="section client">
+    <!--<section class="section client">
       <div class="container client__container">
         <h2 class="client__title">Постійні клієнти</h2>
         <ul class="client__list list-client">

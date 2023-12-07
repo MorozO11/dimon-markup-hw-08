@@ -1,57 +1,66 @@
 // ----------БЛОК КОМАНДИ-----------
 .team {
-    background-color: var(--team-background-color);
-    &__container {
-    }
-    &__title {
-      text-align: center;
-      text-align: center;
-      @include font(700,36px,normal,1.08px);
-    }
-    &__list {
-    }
-    &__social {
-      margin-bottom: 30px;
-    }
-  }
-  // ---------КАРТКИ СПІВРОБІТНИКІВ-------
-  .list-team {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+  background-color: var(--team-background-color);
+
+  &__container {}
+
+  &__title {
     text-align: center;
-    padding-top: 50px;
-    &__card {
-      border-radius: 0px 0px 4px 4px;
-      background: var(--hero-text-color);
-      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    }
-    &__name {
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.48px;
-      margin-bottom: 10px;
-      margin-top: 30px;
-    }
-    &__specialty {
-      color: var(--item-text-color);
-      text-align: center;
-      font-family: Roboto;
-      @include font(400,16px,normal,0.48px);
-      margin-bottom: 16px;
-    }
+    text-align: center;
+    @include font(700, 36px, normal, 1.08px);
+  }
+
+  &__list {}
+
+  &__social {
+    margin-bottom: 30px;
+  }
+}
+
+// ---------КАРТКИ СПІВРОБІТНИКІВ-------
+.list-team {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+  justify-content: center;
+
+  @media (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  @media (min-width:1200px) {
+    flex-wrap: nowrap;
   }
 
 
+  &__card {
+
+    border-radius: 0px 0px 4px 4px;
+    background: var(--hero-text-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
 
+  }
 
+  &__name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
 
-
-
-
-
-
-
+  &__specialty {
+    color: var(--item-text-color);
+    text-align: center;
+    font-family: Roboto;
+    @include font(400, 16px, normal, 0.48px);
+    margin-bottom: 16px;
+  }
+}
