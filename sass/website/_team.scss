@@ -7,8 +7,17 @@
   &__title {
     text-align: center;
     text-align: center;
-    @include font(700, 36px, normal, 1.08px);
+    @include font(700, 28px, normal, 1.08px);
+    @media (min-width: 1200px) 
+    {
+    
+      @include font(700, 36px, normal, 1.08px);
+  
+    }
   }
+
+
+  
 
   &__list {}
 

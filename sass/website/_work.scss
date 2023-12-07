@@ -4,8 +4,14 @@
     }
     &__title {
       text-align: center;
-      @include font(700,36px,normal,1.08px);
+      @include font(700,28px,normal,1.08px);
       margin-bottom: 50px;
+      @media (min-width: 1200px) 
+      {
+      
+        @include font(700, 36px, normal, 1.08px);
+    
+      }
     }
     &__list {
     }
@@ -40,5 +46,11 @@
       padding-bottom: 27px;
       padding-top: 27px;
       background: rgba(47, 48, 58, 0.8);
+      @media (min-width: 1200px) 
+      {
+      
+        @include font(700, 36px, normal, 1.08px);
+    
+      }
     }
   }
