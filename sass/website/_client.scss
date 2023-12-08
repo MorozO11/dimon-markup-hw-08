@@ -1,32 +1,77 @@
 // ----------БЛОК КЛІЄНТІВ-------
 .client {
-    &__title {
-      text-align: center;
-      @include font(700,36px,normal,1.08px);
-      margin-bottom: 50px;
-    }
-    &__list {
+  &__title {
+    text-align: center;
+    @include font(700, 28px, normal, 1.08px);
+    margin-bottom: 50px;
+
+    @media (min-width: 1200px) {
+
+      @include font(700, 36px, normal, 1.08px);
+
     }
   }
-  
-  .list-client {
+
+  &__list {
+
     display: flex;
-    justify-content: space-between;
-    &__link {
-      fill: var(--border-client-color);
-      border-radius: 4px;
-      border: 1px solid var(--border-client-color);
-      width: 170px;
-      height: 92px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width:480px) {
+      flex-wrap: wrap;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      transition-property: var(--action-hover-color);
-      @include transition( 250ms,cubic-bezier(0.4, 0, 0.2, 1));
-      &:hover,
-      &:focus {
-        fill: var(--action-hover-color);
-        border-color: var(--action-hover-color);
-      }
+      flex-direction: row;
+       
+  
+     }
+
+ 
+  }
+}
+
+.list-client {
+
+&__item{
+ 
+  
+}
+  
+
+
+
+  &__link {
+    width: 210px;
+    height: 92px;
+    fill: var(--border-client-color);
+    border-radius: 4px;
+    border: 1px solid var(--border-client-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: var(--action-hover-color);
+    @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+      fill: var(--action-hover-color);
+      border-color: var(--action-hover-color);
+    }
+
+    @media (min-width:768px) {
+      width: 226px;
+
+
+    }
+
+    @media (min-width:1200px) {
+      width: 170px;
+
+
     }
   }
+
+
+}
