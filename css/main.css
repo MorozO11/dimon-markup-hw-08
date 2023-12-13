@@ -58,7 +58,7 @@ p {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max: width 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -1260,6 +1260,9 @@ a {
 }
 .list-projekt__iteam {
   border: 1px solid var(--border-backgraund-color);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 370px;
+          flex: 0 1 370px;
   cursor: pointer;
   -webkit-transition-property: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   transition-property: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
