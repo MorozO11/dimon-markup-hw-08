@@ -58,7 +58,7 @@ p {
 }
 @media (min-width: 768px) {
   .container {
-    max: width 768px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -1229,14 +1229,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 8px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 @media (min-width: 768px) {
   .filter-portfolio__list {
@@ -1251,18 +1251,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+  .list-projekt {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .list-projekt__iteam {
   border: 1px solid var(--border-backgraund-color);
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 370px;
-          flex: 0 1 370px;
   cursor: pointer;
   -webkit-transition-property: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   transition-property: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -1270,6 +1274,20 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .list-projekt__iteam {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 354px;
+            flex: 0 1 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-projekt__iteam {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 370px;
+            flex: 0 1 370px;
+  }
 }
 .list-projekt__iteam:hover, .list-projekt__iteam:active {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -1290,8 +1308,8 @@ a {
   padding-left: 24px;
   padding-right: 24px;
   background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(115%);
+          transform: translateY(115%);
   top: 0;
   left: 0;
   color: #FFF;
