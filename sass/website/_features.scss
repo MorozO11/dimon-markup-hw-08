@@ -46,11 +46,18 @@
   }
 
   &__title {
+    font-size: 14px;
     text-align: center;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     margin-bottom: 10px;
+
+    @media (min-width:768px) {
+      text-align: start;
+      
+    }
+    
   }
 
   &__text {

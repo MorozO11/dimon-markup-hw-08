@@ -64,16 +64,18 @@
     color: var(--hero-text-color);
     text-align: center;
     font-family: Roboto;
-    @include font(900, 26px, 136.364%, 2.64px);
+    @include font(900, 26px, 161.538%, 1.56px);
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 360px;
+   max-width: 360px;
+    text-transform: uppercase;
 
-    @media (min-width:768px) {
-      max-width: 700px;
-      @include font(900, 44px, 136.364%, 2.64px);
-    }
+@media (min-width:1200px) {
+  max-width: 696px;
+
+  @include font(900, 44px, 136.364%, 2.64px);
+}
 
   }
 }
